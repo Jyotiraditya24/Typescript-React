@@ -11,7 +11,7 @@ const handleClick = ()=>{
 export default function Home() {
   return (
     <div>
-      <Button handleClick={()=>console.log("clicked")}></Button>
+      <Button handleClick={(event,id)=>console.log("clicked",event)}></Button>
     </div>
   )
 }

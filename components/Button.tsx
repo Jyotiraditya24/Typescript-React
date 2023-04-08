@@ -1,12 +1,14 @@
 import React from 'react'
 
 type Props = {
-    handleClick:()=> void
+    handleClick:(event: React.MouseEvent<HTMLButtonElement>,id:Number)=> void
 }
+
+// HTMLButtonElement == html button click 
 
 const Button = (props: Props) => {
   return (
-    <div onClick={props.handleClick}>Button</div>
+    <button onClick={(event)=>props.handleClick(event,1)}>Button</button>
   )
 }
 
