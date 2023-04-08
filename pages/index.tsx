@@ -2,37 +2,16 @@ import { Nunito } from 'next/font/google';
 import { Status } from '@/components/Status';
 import Heading from '@/components/Heading';
 import Oscar from '@/components/Oscar';
+import Button from '@/components/Button';
 
-const font = Nunito({
-  subsets: ['latin']
-})
-const PersonName = {
-  first: 'Bruce',
-  last: 'Wayne'
+
+const handleClick = ()=>{
+
 }
-
-const NameList = [
-  {
-    first: 'Bruce',
-    last: 'Wayne'
-  },
-  {
-    first: 'Clark',
-    last: 'Kent'},
-  {
-    first: 'Princess',
-    last: 'Diana'
-  }
-]
-
 export default function Home() {
   return (
     <div>
-      <Status status="success"></Status>
-      <Heading>PlaceHolder Text</Heading>
-      <Oscar>
-        <Heading>PlaceHolder Text 2</Heading>
-      </Oscar>
+      <Button handleClick={()=>console.log("clicked")}></Button>
     </div>
   )
 }
