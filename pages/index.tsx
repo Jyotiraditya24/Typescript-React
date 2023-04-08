@@ -1,7 +1,5 @@
 import { Nunito } from 'next/font/google';
-import {Greet} from "../components/Greet";
-import { Person } from '@/components/Person';
-import { PersonList } from '@/components/PersonList';
+import { Status } from '@/components/Status';
 
 const font = Nunito({
   subsets: ['latin']
@@ -28,10 +26,9 @@ const NameList = [
 export default function Home() {
   return (
     <div>
-      <h2 className={`${font}`}>Hello World</h2>
-      <Greet name="jyotir" messageCount={20} isLoggedIn={false}/>
-      <Person name={PersonName}/>
-      <PersonList names={NameList}/>
+      <Status status="success"></Status>
     </div>
   )
 }
+
+// if we pass a completely random string in status still it will show no error , but we only require success loading and error
