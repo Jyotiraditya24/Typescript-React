@@ -1,17 +1,13 @@
-import { Nunito } from 'next/font/google';
-import { Status } from '@/components/Status';
-import Heading from '@/components/Heading';
-import Oscar from '@/components/Oscar';
 import Button from '@/components/Button';
+import { Input } from '@/components/Input';
 
 
-const handleClick = ()=>{
 
-}
 export default function Home() {
   return (
     <div>
       <Button handleClick={(event,id)=>console.log("clicked",event)}></Button>
+      <Input value="jyotir" handleChange={event => console.log(event) }></Input>
     </div>
   )
 }
