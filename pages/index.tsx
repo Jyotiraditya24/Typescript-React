@@ -1,6 +1,7 @@
 import { Nunito } from 'next/font/google';
 import { Status } from '@/components/Status';
 import Heading from '@/components/Heading';
+import Oscar from '@/components/Oscar';
 
 const font = Nunito({
   subsets: ['latin']
@@ -29,6 +30,9 @@ export default function Home() {
     <div>
       <Status status="success"></Status>
       <Heading>PlaceHolder Text</Heading>
+      <Oscar>
+        <Heading>PlaceHolder Text 2</Heading>
+      </Oscar>
     </div>
   )
 }

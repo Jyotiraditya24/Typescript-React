@@ -1,5 +1,5 @@
 type StatusProp = {
-    status: 'loading'| 'success' | 'error' //union of string literals
+    status:  'loading'| 'success' | 'error' //union of string literals
 }
 
 export const Status = (props: StatusProp)=>{

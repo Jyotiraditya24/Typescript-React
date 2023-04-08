@@ -1,10 +1,11 @@
 type GreetProps = {
     name: string
-    messageCount: number
+    messageCount?: number
     isLoggedIn: boolean
 }
 
 export const Greet = (props: GreetProps): JSX.Element => {
+    const { messageCount = 0 } = props;
     return (
         <div>
             <h2>Welcome {props.name} your have 10 unread messsages</h2>
